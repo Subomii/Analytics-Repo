@@ -16,3 +16,5 @@ Snowflake · dbt Cloud
 - View vs table materializations
 - CTE-based modeling patterns
 - Debugging data quality issues (filtered failed payments to get correct lifetime value)
+
+
