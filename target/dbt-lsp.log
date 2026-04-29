@@ -1,0 +1,951 @@
+==================== 2026-04-29T22:32:41.190448Z | 9b80ce8a-3237-4ccd-9b80-125aace33efb ====================
+22:32:41.190485 [info ]: Starting dbt LSP server
+22:32:41.190502 [info ]: Connecting to LSP client on port 51349
+22:32:41.190667 [info ]: Successfully connected to LSP client
+22:32:41.190676 [info ]: Creating LSP service...
+22:32:41.244279 [info ]: Creating LSP server...
+22:32:41.244309 [info ]: Starting LSP server...
+22:32:41.401703 [info ]: Loading profiles.yml
+22:32:41.541548 [info ]: Waiting for lease on 'target' directory
+22:32:42.021475 [info ]: Started loading project
+22:32:42.021738 [info ]: Loading profiles.yml
+22:32:42.027825 [debug]:    Started loading packages
+22:32:42.028529 [debug]:     Loaded [  0.00s] packages
+22:32:42.029230 [info ]: Started parsing
+22:32:42.056001 [info ]: Finished loading project [  0.03s]
+22:32:42.056690 [debug]: Finished parsing models/staging/jaffle_shop/_src_jaffle_shop.yml [  0.00s]
+22:32:42.056844 [debug]: Finished parsing models/staging/olist/sources.yml [  0.00s]
+22:32:42.058299 [debug]: Finished parsing models/marts/dim_customers.sql [  0.00s]
+22:32:42.058683 [debug]: Finished parsing models/marts/finance/fct_orders.sql [  0.00s]
+22:32:42.059002 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop__customers.sql [  0.00s]
+22:32:42.059493 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop_orders.sql [  0.00s]
+22:32:42.059879 [debug]: Finished parsing models/staging/olist/stg_olist__orders.sql [  0.00s]
+22:32:42.062320 [debug]: Finished parsing models/staging/stripe/stg_stripe__payments.sql [  0.00s]
+22:32:42.063152 [info ]: Finished parsing [  0.03s]
+22:32:42.063312 [info ]: Cached model count updated: 6 models (estimate)
+22:32:42.063325 [info ]: Cached model count updated: 6 models (accurate)
+22:32:42.063361 [info ]: Started scheduling
+22:32:42.063414 [info ]: Finished scheduling [  0.00s]
+22:32:42.063426 [debug]: Compilation - 0 nodes selected: {}
+22:32:42.063439 [warn ]: dbt1092: The selection criterion '' does not match any enabled nodes
+22:32:42.063450 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+22:32:42.063456 [info ]: Started scheduling
+22:32:42.063520 [info ]: Finished scheduling [  0.00s]
+22:32:42.063581 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "CUSTOMERS" }) and interval: None
+22:32:42.063597 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "RAW_OLIST", table: "ORDERS" }) and interval: None
+22:32:42.063605 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "ORDERS" }) and interval: None
+22:32:42.192112 [info ]: Started building task graph
+22:32:42.192161 [info ]: Finished building task graph [  0.00s]
+22:32:42.195067 [info ]: Started scheduling
+22:32:42.195155 [info ]: Finished scheduling [  0.00s]
+22:32:42.195588 [info ]: Cached model count updated: 6 models (accurate)
+22:32:43.130306 [info ]: Started loading project
+22:32:43.130568 [info ]: Loading profiles.yml
+22:32:43.147037 [info ]: Cached model count updated: 6 models (estimate)
+22:32:43.147057 [info ]: Cached model count updated: 6 models (accurate)
+22:32:43.147093 [info ]: Started scheduling
+22:32:43.147173 [info ]: Finished scheduling [  0.00s]
+22:32:43.147189 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+22:32:43.272203 [info ]: Started building task graph
+22:32:43.272278 [info ]: Finished building task graph [  0.00s]
+22:32:43.272425 [info ]: Started rendering (1 nodes)
+22:32:43.272450 [info ]: Started model dbt_subomii.stg_olist__orders
+22:32:43.272469 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+22:32:43.272521 [info ]: Finished loading project [  0.14s]
+22:32:43.273348 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+22:32:43.273470 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:32:43.273491 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+22:32:43.273509 [info ]: Started analyzing (1 nodes)
+22:32:43.273517 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+22:32:43.286749 [info ]:  Succeeded [  0.01s] model dbt_subomii.stg_olist__orders (view)
+22:32:43.286779 [debug]: Finished analyzing [  0.01s] model dbt_subomii.stg_olist__orders [success]
+22:32:43.286786 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+22:32:43.289986 [info ]: Started scheduling
+22:32:43.290036 [info ]: Finished scheduling [  0.00s]
+22:32:43.290386 [info ]: Cached model count updated: 6 models (accurate)
+22:32:44.692071 [info ]: Started loading project
+22:32:44.692338 [info ]: Loading profiles.yml
+22:32:44.709459 [info ]: Cached model count updated: 6 models (estimate)
+22:32:44.709479 [info ]: Cached model count updated: 6 models (accurate)
+22:32:44.709511 [info ]: Started scheduling
+22:32:44.709588 [info ]: Finished scheduling [  0.00s]
+22:32:44.709605 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+22:32:44.838079 [info ]: Started building task graph
+22:32:44.838144 [info ]: Finished building task graph [  0.00s]
+22:32:44.838261 [info ]: Started rendering (1 nodes)
+22:32:44.838279 [info ]: Started model dbt_subomii.stg_olist__orders
+22:32:44.838292 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+22:32:44.838340 [info ]: Finished loading project [  0.15s]
+22:32:44.838555 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+22:32:44.838626 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:32:44.838646 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+22:32:44.838665 [info ]: Started analyzing (1 nodes)
+22:32:44.838676 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+22:32:44.839285 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+22:32:44.839309 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:32:44.839318 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+22:32:44.842789 [info ]: Started scheduling
+22:32:44.842840 [info ]: Finished scheduling [  0.00s]
+22:32:44.844052 [info ]: Cached model count updated: 6 models (accurate)
+22:32:46.351517 [info ]: Started loading project
+22:32:46.351787 [info ]: Loading profiles.yml
+22:32:46.372807 [info ]: Cached model count updated: 6 models (estimate)
+22:32:46.372828 [info ]: Cached model count updated: 6 models (accurate)
+22:32:46.372858 [info ]: Started scheduling
+22:32:46.372944 [info ]: Finished scheduling [  0.00s]
+22:32:46.372959 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+22:32:46.498748 [info ]: Started building task graph
+22:32:46.498838 [info ]: Finished building task graph [  0.00s]
+22:32:46.498966 [info ]: Started rendering (6 nodes)
+22:32:46.498984 [info ]: Started model dbt_subomii.stg_olist__orders
+22:32:46.498998 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+22:32:46.499028 [info ]: Started model dbt_subomii.dim_customers
+22:32:46.499039 [debug]: Started rendering model dbt_subomii.dim_customers
+22:32:46.499061 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+22:32:46.499072 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+22:32:46.499074 [info ]: Finished loading project [  0.15s]
+22:32:46.499098 [info ]: Started model dbt_subomii.fct_orders
+22:32:46.499110 [debug]: Started rendering model dbt_subomii.fct_orders
+22:32:46.499129 [info ]: Started model dbt_subomii.stg_stripe__payments
+22:32:46.499141 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+22:32:46.499161 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+22:32:46.499171 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+22:32:46.499292 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+22:32:46.499441 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:32:46.499477 [info ]: Started analyzing (6 nodes)
+22:32:46.499491 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+22:32:46.500012 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+22:32:46.500095 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+22:32:46.500094 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+22:32:46.500094 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+22:32:46.500106 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+22:32:46.500128 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+22:32:46.500134 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+22:32:46.500202 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+22:32:46.500238 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+22:32:46.500260 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+22:32:46.500270 [debug]: Started analyzing model dbt_subomii.fct_orders
+22:32:46.500283 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+22:32:46.500302 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+22:32:46.500320 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+22:32:46.500333 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+22:32:46.500341 [debug]: Started analyzing model dbt_subomii.dim_customers
+22:32:46.500359 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+22:32:46.500376 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:32:46.500791 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_jaffle_shop_orders (view)
+22:32:46.500817 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+22:32:46.500828 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_jaffle_shop__customers (view)
+22:32:46.500838 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+22:32:46.502607 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_stripe__payments (view)
+22:32:46.502636 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+22:32:46.504375 [info ]:  Succeeded [  0.01s] model dbt_subomii.fct_orders (table)
+22:32:46.504398 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+22:32:46.512753 [info ]:  Succeeded [  0.01s] model dbt_subomii.dim_customers (table)
+22:32:46.512781 [debug]: Finished analyzing [  0.01s] model dbt_subomii.dim_customers [success]
+22:32:46.512788 [info ]: Finished analyzing [  0.01s] (6 nodes, 0 skipped, 0 errors)
+22:32:46.515838 [info ]: Started scheduling
+22:32:46.515901 [info ]: Finished scheduling [  0.00s]
+22:32:46.517503 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2026-04-29T22:33:46.389672Z | e330d370-5c0f-434c-a620-a23ce0be9313 ====================
+22:33:46.389701 [info ]: Starting dbt LSP server
+22:33:46.389712 [info ]: Connecting to LSP client on port 33357
+22:33:46.389847 [info ]: Successfully connected to LSP client
+22:33:46.389856 [info ]: Creating LSP service...
+22:33:46.445150 [info ]: Creating LSP server...
+22:33:46.445174 [info ]: Starting LSP server...
+22:33:46.531960 [info ]: Loading profiles.yml
+22:33:46.661454 [info ]: Waiting for lease on 'target' directory
+22:33:47.151458 [info ]: Started loading project
+22:33:47.151768 [info ]: Loading profiles.yml
+22:33:47.157855 [debug]:    Started loading packages
+22:33:47.158689 [debug]:     Loaded [  0.00s] packages
+22:33:47.159422 [info ]: Started parsing
+22:33:47.186315 [info ]: Finished loading project [  0.03s]
+22:33:47.186946 [debug]: Finished parsing models/staging/jaffle_shop/_src_jaffle_shop.yml [  0.00s]
+22:33:47.187103 [debug]: Finished parsing models/staging/olist/sources.yml [  0.00s]
+22:33:47.188562 [debug]: Finished parsing models/marts/dim_customers.sql [  0.00s]
+22:33:47.188978 [debug]: Finished parsing models/marts/finance/fct_orders.sql [  0.00s]
+22:33:47.189422 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop__customers.sql [  0.00s]
+22:33:47.189891 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop_orders.sql [  0.00s]
+22:33:47.190233 [debug]: Finished parsing models/staging/olist/stg_olist__orders.sql [  0.00s]
+22:33:47.192860 [debug]: Finished parsing models/staging/stripe/stg_stripe__payments.sql [  0.00s]
+22:33:47.193716 [info ]: Finished parsing [  0.03s]
+22:33:47.193881 [info ]: Cached model count updated: 6 models (estimate)
+22:33:47.193894 [info ]: Cached model count updated: 6 models (accurate)
+22:33:47.193930 [info ]: Started scheduling
+22:33:47.193987 [info ]: Finished scheduling [  0.00s]
+22:33:47.193999 [debug]: Compilation - 0 nodes selected: {}
+22:33:47.194011 [warn ]: dbt1092: The selection criterion '' does not match any enabled nodes
+22:33:47.194022 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+22:33:47.194030 [info ]: Started scheduling
+22:33:47.194099 [info ]: Finished scheduling [  0.00s]
+22:33:47.194170 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "CUSTOMERS" }) and interval: None
+22:33:47.194182 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "ORDERS" }) and interval: None
+22:33:47.194189 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "RAW_OLIST", table: "ORDERS" }) and interval: None
+22:33:47.320079 [info ]: Started building task graph
+22:33:47.320126 [info ]: Finished building task graph [  0.00s]
+22:33:47.322738 [info ]: Started scheduling
+22:33:47.322816 [info ]: Finished scheduling [  0.00s]
+22:33:47.323237 [info ]: Cached model count updated: 6 models (accurate)
+22:33:48.211354 [info ]: Started loading project
+22:33:48.212087 [info ]: Loading profiles.yml
+22:33:48.232985 [info ]: Cached model count updated: 6 models (estimate)
+22:33:48.233003 [info ]: Cached model count updated: 6 models (accurate)
+22:33:48.233037 [info ]: Started scheduling
+22:33:48.233119 [info ]: Finished scheduling [  0.00s]
+22:33:48.233135 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+22:33:48.358870 [info ]: Started building task graph
+22:33:48.358942 [info ]: Finished building task graph [  0.00s]
+22:33:48.359064 [info ]: Started rendering (1 nodes)
+22:33:48.359085 [info ]: Started model dbt_subomii.stg_olist__orders
+22:33:48.359104 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+22:33:48.359151 [info ]: Finished loading project [  0.15s]
+22:33:48.359912 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+22:33:48.360102 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:33:48.360125 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+22:33:48.360160 [info ]: Started analyzing (1 nodes)
+22:33:48.360174 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+22:33:48.381023 [info ]:  Succeeded [  0.02s] model dbt_subomii.stg_olist__orders (view)
+22:33:48.381061 [debug]: Finished analyzing [  0.02s] model dbt_subomii.stg_olist__orders [success]
+22:33:48.381076 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+22:33:48.384964 [info ]: Started scheduling
+22:33:48.385037 [info ]: Finished scheduling [  0.00s]
+22:33:48.385654 [info ]: Cached model count updated: 6 models (accurate)
+22:33:49.781680 [info ]: Started loading project
+22:33:49.781958 [info ]: Loading profiles.yml
+22:33:49.804249 [info ]: Cached model count updated: 6 models (estimate)
+22:33:49.804273 [info ]: Cached model count updated: 6 models (accurate)
+22:33:49.804323 [info ]: Started scheduling
+22:33:49.804401 [info ]: Finished scheduling [  0.00s]
+22:33:49.804417 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+22:33:49.929288 [info ]: Started building task graph
+22:33:49.929350 [info ]: Finished building task graph [  0.00s]
+22:33:49.929463 [info ]: Started rendering (1 nodes)
+22:33:49.929481 [info ]: Started model dbt_subomii.stg_olist__orders
+22:33:49.929494 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+22:33:49.929547 [info ]: Finished loading project [  0.15s]
+22:33:49.929738 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+22:33:49.929808 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:33:49.929823 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+22:33:49.929835 [info ]: Started analyzing (1 nodes)
+22:33:49.929843 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+22:33:49.930495 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+22:33:49.930520 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:33:49.930527 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+22:33:49.933318 [info ]: Started scheduling
+22:33:49.933414 [info ]: Finished scheduling [  0.00s]
+22:33:49.934514 [info ]: Cached model count updated: 6 models (accurate)
+22:33:51.351964 [info ]: Started loading project
+22:33:51.352237 [info ]: Loading profiles.yml
+22:33:51.369260 [info ]: Cached model count updated: 6 models (estimate)
+22:33:51.369280 [info ]: Cached model count updated: 6 models (accurate)
+22:33:51.369315 [info ]: Started scheduling
+22:33:51.369400 [info ]: Finished scheduling [  0.00s]
+22:33:51.369418 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+22:33:51.496406 [info ]: Started building task graph
+22:33:51.496497 [info ]: Finished building task graph [  0.00s]
+22:33:51.496628 [info ]: Started rendering (6 nodes)
+22:33:51.496647 [info ]: Started model dbt_subomii.stg_olist__orders
+22:33:51.496660 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+22:33:51.496687 [info ]: Started model dbt_subomii.dim_customers
+22:33:51.496698 [debug]: Started rendering model dbt_subomii.dim_customers
+22:33:51.496709 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+22:33:51.496720 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+22:33:51.496729 [info ]: Started model dbt_subomii.fct_orders
+22:33:51.496737 [debug]: Started rendering model dbt_subomii.fct_orders
+22:33:51.496747 [info ]: Started model dbt_subomii.stg_stripe__payments
+22:33:51.496754 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+22:33:51.496762 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+22:33:51.496770 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+22:33:51.496764 [info ]: Finished loading project [  0.14s]
+22:33:51.496924 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+22:33:51.497003 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:33:51.497038 [info ]: Started analyzing (6 nodes)
+22:33:51.497051 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+22:33:51.497480 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+22:33:51.497500 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+22:33:51.497502 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+22:33:51.497546 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+22:33:51.497546 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+22:33:51.497654 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+22:33:51.497682 [debug]: Started analyzing model dbt_subomii.dim_customers
+22:33:51.497705 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+22:33:51.497716 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+22:33:51.497728 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+22:33:51.497736 [debug]: Started analyzing model dbt_subomii.fct_orders
+22:33:51.497750 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+22:33:51.497759 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+22:33:51.497777 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+22:33:51.497809 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+22:33:51.497815 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+22:33:51.497835 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+22:33:51.497854 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+22:33:51.498136 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop__customers (view)
+22:33:51.498162 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+22:33:51.498177 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_jaffle_shop_orders (view)
+22:33:51.498192 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+22:33:51.499856 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_stripe__payments (view)
+22:33:51.499880 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+22:33:51.501357 [info ]:  Succeeded [  0.00s] model dbt_subomii.fct_orders (table)
+22:33:51.501380 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+22:33:51.506762 [info ]:  Succeeded [  0.01s] model dbt_subomii.dim_customers (table)
+22:33:51.506789 [debug]: Finished analyzing [  0.01s] model dbt_subomii.dim_customers [success]
+22:33:51.506797 [info ]: Finished analyzing [  0.01s] (6 nodes, 0 skipped, 0 errors)
+22:33:51.510040 [info ]: Started scheduling
+22:33:51.510089 [info ]: Finished scheduling [  0.00s]
+22:33:51.511090 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2026-04-29T22:51:37.305856Z | 1c4a70b8-cd44-41a5-982c-7ba23e5416d8 ====================
+22:51:37.305899 [info ]: Starting dbt LSP server
+22:51:37.305916 [info ]: Connecting to LSP client on port 55047
+22:51:37.306058 [info ]: Successfully connected to LSP client
+22:51:37.306066 [info ]: Creating LSP service...
+22:51:37.360528 [info ]: Creating LSP server...
+22:51:37.360551 [info ]: Starting LSP server...
+22:51:37.461805 [info ]: Loading profiles.yml
+22:51:37.681522 [info ]: Waiting for lease on 'target' directory
+==================== 2026-04-29T22:59:42.306347Z | d86b553b-dfca-49cc-9d2a-23c587a86e8c ====================
+22:59:42.306386 [info ]: Starting dbt LSP server
+22:59:42.306398 [info ]: Connecting to LSP client on port 51875
+22:59:42.306552 [info ]: Successfully connected to LSP client
+22:59:42.306560 [info ]: Creating LSP service...
+22:59:42.360998 [info ]: Creating LSP server...
+22:59:42.361031 [info ]: Starting LSP server...
+22:59:42.406483 [info ]: Loading profiles.yml
+22:59:42.461485 [info ]: Waiting for lease on 'target' directory
+22:59:43.051549 [info ]: Started loading project
+22:59:43.051864 [info ]: Loading profiles.yml
+22:59:43.058300 [debug]:    Started loading packages
+22:59:43.058983 [debug]:     Loaded [  0.00s] packages
+22:59:43.059725 [info ]: Started parsing
+22:59:43.087188 [info ]: Finished loading project [  0.04s]
+22:59:43.087911 [debug]: Finished parsing models/staging/jaffle_shop/_src_jaffle_shop.yml [  0.00s]
+22:59:43.088104 [debug]: Finished parsing models/staging/olist/sources.yml [  0.00s]
+22:59:43.089705 [debug]: Finished parsing models/marts/dim_customers.sql [  0.00s]
+22:59:43.090070 [debug]: Finished parsing models/marts/finance/fct_orders.sql [  0.00s]
+22:59:43.090357 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop__customers.sql [  0.00s]
+22:59:43.090698 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop_orders.sql [  0.00s]
+22:59:43.091010 [debug]: Finished parsing models/staging/olist/stg_olist__orders.sql [  0.00s]
+22:59:43.093662 [debug]: Finished parsing models/staging/stripe/stg_stripe__payments.sql [  0.00s]
+22:59:43.094564 [info ]: Finished parsing [  0.03s]
+22:59:43.094733 [info ]: Cached model count updated: 6 models (estimate)
+22:59:43.094745 [info ]: Cached model count updated: 6 models (accurate)
+22:59:43.094801 [info ]: Started scheduling
+22:59:43.094865 [info ]: Finished scheduling [  0.00s]
+22:59:43.094880 [debug]: Compilation - 0 nodes selected: {}
+22:59:43.094894 [warn ]: dbt1092: The selection criterion '' does not match any enabled nodes
+22:59:43.094907 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+22:59:43.094913 [info ]: Started scheduling
+22:59:43.094981 [info ]: Finished scheduling [  0.00s]
+22:59:43.095072 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "CUSTOMERS" }) and interval: None
+22:59:43.095086 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "ORDERS" }) and interval: None
+22:59:43.095093 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "RAW_OLIST", table: "ORDERS" }) and interval: None
+22:59:43.221052 [info ]: Started building task graph
+22:59:43.221104 [info ]: Finished building task graph [  0.00s]
+22:59:43.223889 [info ]: Started scheduling
+22:59:43.223974 [info ]: Finished scheduling [  0.00s]
+22:59:43.224442 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2026-04-29T23:05:13.245841Z | 535723d4-ab9b-4dc8-8abb-2766abafe56d ====================
+23:05:13.245883 [info ]: Starting dbt LSP server
+23:05:13.245900 [info ]: Connecting to LSP client on port 34863
+23:05:13.246046 [info ]: Successfully connected to LSP client
+23:05:13.246057 [info ]: Creating LSP service...
+23:05:13.300325 [info ]: Creating LSP server...
+23:05:13.300347 [info ]: Starting LSP server...
+23:05:13.511810 [info ]: Loading profiles.yml
+23:05:13.671574 [info ]: Waiting for lease on 'target' directory
+==================== 2026-04-29T23:08:54.644606Z | ea592372-5faa-402d-ac80-61f94399d506 ====================
+23:08:54.644654 [info ]: Starting dbt LSP server
+23:08:54.644672 [info ]: Connecting to LSP client on port 43409
+23:08:54.644815 [info ]: Successfully connected to LSP client
+23:08:54.644824 [info ]: Creating LSP service...
+23:08:54.699456 [info ]: Creating LSP server...
+23:08:54.699481 [info ]: Starting LSP server...
+23:08:54.811842 [info ]: Loading profiles.yml
+23:08:54.951553 [info ]: Waiting for lease on 'target' directory
+==================== 2026-04-29T23:29:23.374102Z | 339ad7b6-eda7-4c63-a5d1-e76aba8a2627 ====================
+23:29:23.374148 [info ]: Starting dbt LSP server
+23:29:23.374162 [info ]: Connecting to LSP client on port 59113
+23:29:23.374310 [info ]: Successfully connected to LSP client
+23:29:23.374318 [info ]: Creating LSP service...
+23:29:23.428778 [info ]: Creating LSP server...
+23:29:23.428801 [info ]: Starting LSP server...
+23:29:23.551816 [info ]: Loading profiles.yml
+23:29:23.661476 [info ]: Waiting for lease on 'target' directory
+23:31:52.901467 [info ]: Started loading project
+23:31:52.901762 [info ]: Loading profiles.yml
+23:31:52.907818 [debug]:    Started loading packages
+23:31:52.908506 [debug]:     Loaded [  0.00s] packages
+23:31:52.909219 [info ]: Started parsing
+23:31:52.936331 [info ]: Finished loading project [  0.03s]
+23:31:52.937001 [debug]: Finished parsing models/staging/jaffle_shop/_src_jaffle_shop.yml [  0.00s]
+23:31:52.937164 [debug]: Finished parsing models/staging/olist/sources.yml [  0.00s]
+23:31:52.938763 [debug]: Finished parsing models/marts/dim_customers.sql [  0.00s]
+23:31:52.939095 [debug]: Finished parsing models/marts/finance/fct_orders.sql [  0.00s]
+23:31:52.939384 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop__customers.sql [  0.00s]
+23:31:52.939663 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop_orders.sql [  0.00s]
+23:31:52.940003 [debug]: Finished parsing models/staging/olist/stg_olist__orders.sql [  0.00s]
+23:31:52.942413 [debug]: Finished parsing models/staging/stripe/stg_stripe__payments.sql [  0.00s]
+23:31:52.943243 [info ]: Finished parsing [  0.03s]
+23:31:52.943410 [info ]: Cached model count updated: 6 models (estimate)
+23:31:52.943423 [info ]: Cached model count updated: 6 models (accurate)
+23:31:52.943470 [info ]: Started scheduling
+23:31:52.943534 [info ]: Finished scheduling [  0.00s]
+23:31:52.943545 [debug]: Compilation - 0 nodes selected: {}
+23:31:52.943558 [warn ]: dbt1092: The selection criterion '' does not match any enabled nodes
+23:31:52.943568 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+23:31:52.943573 [info ]: Started scheduling
+23:31:52.943643 [info ]: Finished scheduling [  0.00s]
+23:31:52.943729 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "CUSTOMERS" }) and interval: None
+23:31:52.943742 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "ORDERS" }) and interval: None
+23:31:52.943749 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "RAW_OLIST", table: "ORDERS" }) and interval: None
+23:31:53.073293 [info ]: Started building task graph
+23:31:53.073350 [info ]: Finished building task graph [  0.00s]
+23:31:53.076156 [info ]: Started scheduling
+23:31:53.076207 [info ]: Finished scheduling [  0.00s]
+23:31:53.076664 [info ]: Cached model count updated: 6 models (accurate)
+23:31:53.941527 [info ]: Started loading project
+23:31:53.941835 [info ]: Loading profiles.yml
+23:31:53.964365 [info ]: Cached model count updated: 6 models (estimate)
+23:31:53.964387 [info ]: Cached model count updated: 6 models (accurate)
+23:31:53.964422 [info ]: Started scheduling
+23:31:53.964517 [info ]: Finished scheduling [  0.00s]
+23:31:53.964534 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+23:31:54.090538 [info ]: Started building task graph
+23:31:54.090619 [info ]: Finished building task graph [  0.00s]
+23:31:54.090773 [info ]: Started rendering (1 nodes)
+23:31:54.090797 [info ]: Started model dbt_subomii.stg_olist__orders
+23:31:54.090820 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:31:54.090870 [info ]: Finished loading project [  0.15s]
+23:31:54.091584 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:31:54.091705 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:31:54.091724 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:31:54.091743 [info ]: Started analyzing (1 nodes)
+23:31:54.091753 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:31:54.106847 [info ]:  Succeeded [  0.01s] model dbt_subomii.stg_olist__orders (view)
+23:31:54.106891 [debug]: Finished analyzing [  0.02s] model dbt_subomii.stg_olist__orders [success]
+23:31:54.106901 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+23:31:54.110273 [info ]: Started scheduling
+23:31:54.110344 [info ]: Finished scheduling [  0.00s]
+23:31:54.110911 [info ]: Cached model count updated: 6 models (accurate)
+23:31:55.501579 [info ]: Started loading project
+23:31:55.501939 [info ]: Loading profiles.yml
+23:31:55.519152 [info ]: Cached model count updated: 6 models (estimate)
+23:31:55.519170 [info ]: Cached model count updated: 6 models (accurate)
+23:31:55.519214 [info ]: Started scheduling
+23:31:55.519294 [info ]: Finished scheduling [  0.00s]
+23:31:55.519310 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+23:31:55.645157 [info ]: Started building task graph
+23:31:55.645228 [info ]: Finished building task graph [  0.00s]
+23:31:55.645330 [info ]: Started rendering (1 nodes)
+23:31:55.645349 [info ]: Started model dbt_subomii.stg_olist__orders
+23:31:55.645362 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:31:55.645431 [info ]: Finished loading project [  0.14s]
+23:31:55.645576 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:31:55.645696 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:31:55.645714 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:31:55.645740 [info ]: Started analyzing (1 nodes)
+23:31:55.645751 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:31:55.646422 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:31:55.646444 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:31:55.646454 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:31:55.649253 [info ]: Started scheduling
+23:31:55.649310 [info ]: Finished scheduling [  0.00s]
+23:31:55.650240 [info ]: Cached model count updated: 6 models (accurate)
+23:31:57.072658 [info ]: Started loading project
+23:31:57.072941 [info ]: Loading profiles.yml
+23:31:57.093357 [info ]: Cached model count updated: 6 models (estimate)
+23:31:57.093377 [info ]: Cached model count updated: 6 models (accurate)
+23:31:57.093413 [info ]: Started scheduling
+23:31:57.093496 [info ]: Finished scheduling [  0.00s]
+23:31:57.093513 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+23:31:57.217800 [info ]: Started building task graph
+23:31:57.217888 [info ]: Finished building task graph [  0.00s]
+23:31:57.218015 [info ]: Started rendering (6 nodes)
+23:31:57.218034 [info ]: Started model dbt_subomii.stg_olist__orders
+23:31:57.218047 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:31:57.218069 [info ]: Started model dbt_subomii.dim_customers
+23:31:57.218078 [debug]: Started rendering model dbt_subomii.dim_customers
+23:31:57.218086 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+23:31:57.218092 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+23:31:57.218100 [info ]: Started model dbt_subomii.fct_orders
+23:31:57.218106 [debug]: Started rendering model dbt_subomii.fct_orders
+23:31:57.218114 [info ]: Started model dbt_subomii.stg_stripe__payments
+23:31:57.218121 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+23:31:57.218118 [info ]: Finished loading project [  0.15s]
+23:31:57.218129 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+23:31:57.218137 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+23:31:57.218311 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:31:57.218392 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:31:57.218429 [info ]: Started analyzing (6 nodes)
+23:31:57.218446 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:31:57.218825 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+23:31:57.218829 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+23:31:57.218926 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+23:31:57.218940 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+23:31:57.218940 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:31:57.218961 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+23:31:57.218972 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+23:31:57.218981 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+23:31:57.218989 [debug]: Started analyzing model dbt_subomii.fct_orders
+23:31:57.219008 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+23:31:57.219020 [debug]: Started analyzing model dbt_subomii.dim_customers
+23:31:57.219041 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:31:57.219053 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+23:31:57.219072 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:31:57.219082 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:31:57.219090 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+23:31:57.219183 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:31:57.219204 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:31:57.219478 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop_orders (view)
+23:31:57.219504 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:31:57.219522 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop__customers (view)
+23:31:57.219535 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:31:57.221094 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_stripe__payments (view)
+23:31:57.221118 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:31:57.222684 [info ]:  Succeeded [  0.00s] model dbt_subomii.fct_orders (table)
+23:31:57.222712 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+23:31:57.228507 [info ]:  Succeeded [  0.01s] model dbt_subomii.dim_customers (table)
+23:31:57.228532 [debug]: Finished analyzing [  0.01s] model dbt_subomii.dim_customers [success]
+23:31:57.228542 [info ]: Finished analyzing [  0.01s] (6 nodes, 0 skipped, 0 errors)
+23:31:57.231326 [info ]: Started scheduling
+23:31:57.231410 [info ]: Finished scheduling [  0.00s]
+23:31:57.232582 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2026-04-29T23:40:25.458030Z | 9327e52d-746a-4233-be54-bb547805aac6 ====================
+23:40:25.458067 [info ]: Starting dbt LSP server
+23:40:25.458082 [info ]: Connecting to LSP client on port 39963
+23:40:25.458230 [info ]: Successfully connected to LSP client
+23:40:25.458240 [info ]: Creating LSP service...
+23:40:25.512717 [info ]: Creating LSP server...
+23:40:25.512736 [info ]: Starting LSP server...
+23:40:25.557525 [info ]: Loading profiles.yml
+23:40:25.601521 [info ]: Waiting for lease on 'target' directory
+23:40:26.331520 [info ]: Started loading project
+23:40:26.331800 [info ]: Loading profiles.yml
+23:40:26.337972 [debug]:    Started loading packages
+23:40:26.338661 [debug]:     Loaded [  0.00s] packages
+23:40:26.339384 [info ]: Started parsing
+23:40:26.365785 [info ]: Finished loading project [  0.03s]
+23:40:26.366479 [debug]: Finished parsing models/staging/jaffle_shop/_src_jaffle_shop.yml [  0.00s]
+23:40:26.366681 [debug]: Finished parsing models/staging/olist/sources.yml [  0.00s]
+23:40:26.368200 [debug]: Finished parsing models/marts/dim_customers.sql [  0.00s]
+23:40:26.368568 [debug]: Finished parsing models/marts/finance/fct_orders.sql [  0.00s]
+23:40:26.368974 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop__customers.sql [  0.00s]
+23:40:26.369479 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop_orders.sql [  0.00s]
+23:40:26.369866 [debug]: Finished parsing models/staging/olist/stg_olist__orders.sql [  0.00s]
+23:40:26.372485 [debug]: Finished parsing models/staging/stripe/stg_stripe__payments.sql [  0.00s]
+23:40:26.373289 [info ]: Finished parsing [  0.03s]
+23:40:26.373457 [info ]: Cached model count updated: 6 models (estimate)
+23:40:26.373472 [info ]: Cached model count updated: 6 models (accurate)
+23:40:26.373524 [info ]: Started scheduling
+23:40:26.373593 [info ]: Finished scheduling [  0.00s]
+23:40:26.373605 [debug]: Compilation - 0 nodes selected: {}
+23:40:26.373618 [warn ]: dbt1092: The selection criterion '' does not match any enabled nodes
+23:40:26.373631 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+23:40:26.373638 [info ]: Started scheduling
+23:40:26.373716 [info ]: Finished scheduling [  0.00s]
+23:40:26.373807 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "CUSTOMERS" }) and interval: None
+23:40:26.373820 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "ORDERS" }) and interval: None
+23:40:26.373827 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "RAW_OLIST", table: "ORDERS" }) and interval: None
+23:40:26.499074 [info ]: Started building task graph
+23:40:26.499121 [info ]: Finished building task graph [  0.00s]
+23:40:26.501638 [info ]: Started scheduling
+23:40:26.501708 [info ]: Finished scheduling [  0.00s]
+23:40:26.502125 [info ]: Cached model count updated: 6 models (accurate)
+23:40:27.401484 [info ]: Started loading project
+23:40:27.401755 [info ]: Loading profiles.yml
+23:40:27.421892 [info ]: Cached model count updated: 6 models (estimate)
+23:40:27.421913 [info ]: Cached model count updated: 6 models (accurate)
+23:40:27.421946 [info ]: Started scheduling
+23:40:27.422028 [info ]: Finished scheduling [  0.00s]
+23:40:27.422042 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+23:40:27.546056 [info ]: Started building task graph
+23:40:27.546125 [info ]: Finished building task graph [  0.00s]
+23:40:27.546250 [info ]: Started rendering (1 nodes)
+23:40:27.546272 [info ]: Started model dbt_subomii.stg_olist__orders
+23:40:27.546294 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:40:27.546341 [info ]: Finished loading project [  0.14s]
+23:40:27.546918 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:40:27.547097 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:27.547122 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:40:27.547156 [info ]: Started analyzing (1 nodes)
+23:40:27.547170 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:40:27.568009 [info ]:  Succeeded [  0.02s] model dbt_subomii.stg_olist__orders (view)
+23:40:27.568051 [debug]: Finished analyzing [  0.02s] model dbt_subomii.stg_olist__orders [success]
+23:40:27.568068 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+23:40:27.572150 [info ]: Started scheduling
+23:40:27.572217 [info ]: Finished scheduling [  0.00s]
+23:40:27.572747 [info ]: Cached model count updated: 6 models (accurate)
+23:40:28.952393 [info ]: Started loading project
+23:40:28.952659 [info ]: Loading profiles.yml
+23:40:28.969665 [info ]: Cached model count updated: 6 models (estimate)
+23:40:28.969685 [info ]: Cached model count updated: 6 models (accurate)
+23:40:28.969720 [info ]: Started scheduling
+23:40:28.969796 [info ]: Finished scheduling [  0.00s]
+23:40:28.969811 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+23:40:29.093648 [info ]: Started building task graph
+23:40:29.093707 [info ]: Finished building task graph [  0.00s]
+23:40:29.093811 [info ]: Started rendering (1 nodes)
+23:40:29.093830 [info ]: Started model dbt_subomii.stg_olist__orders
+23:40:29.093843 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:40:29.093891 [info ]: Finished loading project [  0.14s]
+23:40:29.094070 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:40:29.094144 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:29.094164 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:40:29.094184 [info ]: Started analyzing (1 nodes)
+23:40:29.094195 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:40:29.094794 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:40:29.094818 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:29.094827 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:40:29.097624 [info ]: Started scheduling
+23:40:29.097683 [info ]: Finished scheduling [  0.00s]
+23:40:29.098677 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2026-04-29T23:40:39.735634Z | 4a90d048-f340-4d6d-b14c-88b63fb428f5 ====================
+23:40:39.735671 [info ]: Starting dbt LSP server
+23:40:39.735685 [info ]: Connecting to LSP client on port 33273
+23:40:39.735820 [info ]: Successfully connected to LSP client
+23:40:39.735827 [info ]: Creating LSP service...
+23:40:39.791023 [info ]: Creating LSP server...
+23:40:39.791048 [info ]: Starting LSP server...
+23:40:39.981807 [info ]: Loading profiles.yml
+23:40:40.121542 [info ]: Waiting for lease on 'target' directory
+23:40:40.611346 [info ]: Started loading project
+23:40:40.611624 [info ]: Loading profiles.yml
+23:40:40.617689 [debug]:    Started loading packages
+23:40:40.618348 [debug]:     Loaded [  0.00s] packages
+23:40:40.619061 [info ]: Started parsing
+23:40:40.645865 [info ]: Finished loading project [  0.03s]
+23:40:40.646576 [debug]: Finished parsing models/staging/jaffle_shop/_src_jaffle_shop.yml [  0.00s]
+23:40:40.646736 [debug]: Finished parsing models/staging/olist/sources.yml [  0.00s]
+23:40:40.648083 [debug]: Finished parsing models/marts/dim_customers.sql [  0.00s]
+23:40:40.648439 [debug]: Finished parsing models/marts/finance/fct_orders.sql [  0.00s]
+23:40:40.648754 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop__customers.sql [  0.00s]
+23:40:40.649043 [debug]: Finished parsing models/staging/jaffle_shop/stg_jaffle_shop_orders.sql [  0.00s]
+23:40:40.649320 [debug]: Finished parsing models/staging/olist/stg_olist__orders.sql [  0.00s]
+23:40:40.652138 [debug]: Finished parsing models/staging/stripe/stg_stripe__payments.sql [  0.00s]
+23:40:40.652884 [info ]: Finished parsing [  0.03s]
+23:40:40.653044 [info ]: Cached model count updated: 6 models (estimate)
+23:40:40.653056 [info ]: Cached model count updated: 6 models (accurate)
+23:40:40.653107 [info ]: Started scheduling
+23:40:40.653167 [info ]: Finished scheduling [  0.00s]
+23:40:40.653178 [debug]: Compilation - 0 nodes selected: {}
+23:40:40.653196 [warn ]: dbt1092: The selection criterion '' does not match any enabled nodes
+23:40:40.653206 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+23:40:40.653211 [info ]: Started scheduling
+23:40:40.653286 [info ]: Finished scheduling [  0.00s]
+23:40:40.653386 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "ORDERS" }) and interval: None
+23:40:40.653399 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "RAW", schema: "JAFFLE_SHOP", table: "CUSTOMERS" }) and interval: None
+23:40:40.653408 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ANALYTICS", schema: "RAW_OLIST", table: "ORDERS" }) and interval: None
+23:40:40.780880 [info ]: Started building task graph
+23:40:40.780926 [info ]: Finished building task graph [  0.00s]
+23:40:40.783513 [info ]: Started scheduling
+23:40:40.783570 [info ]: Finished scheduling [  0.00s]
+23:40:40.784012 [info ]: Cached model count updated: 6 models (accurate)
+23:40:41.705398 [info ]: Started loading project
+23:40:41.705672 [info ]: Loading profiles.yml
+23:40:41.726059 [info ]: Cached model count updated: 6 models (estimate)
+23:40:41.726079 [info ]: Cached model count updated: 6 models (accurate)
+23:40:41.726112 [info ]: Started scheduling
+23:40:41.726197 [info ]: Finished scheduling [  0.00s]
+23:40:41.726212 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+23:40:41.850762 [info ]: Started building task graph
+23:40:41.850830 [info ]: Finished building task graph [  0.00s]
+23:40:41.850957 [info ]: Started rendering (1 nodes)
+23:40:41.850980 [info ]: Started model dbt_subomii.stg_olist__orders
+23:40:41.851004 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:40:41.851050 [info ]: Finished loading project [  0.15s]
+23:40:41.851629 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:40:41.851729 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:41.851759 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:40:41.851782 [info ]: Started analyzing (1 nodes)
+23:40:41.851792 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:40:41.864703 [info ]:  Succeeded [  0.01s] model dbt_subomii.stg_olist__orders (view)
+23:40:41.864733 [debug]: Finished analyzing [  0.01s] model dbt_subomii.stg_olist__orders [success]
+23:40:41.864743 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+23:40:41.867257 [info ]: Started scheduling
+23:40:41.867316 [info ]: Finished scheduling [  0.00s]
+23:40:41.867642 [info ]: Cached model count updated: 6 models (accurate)
+23:40:43.261848 [info ]: Started loading project
+23:40:43.262109 [info ]: Loading profiles.yml
+23:40:43.278842 [info ]: Cached model count updated: 6 models (estimate)
+23:40:43.278862 [info ]: Cached model count updated: 6 models (accurate)
+23:40:43.278900 [info ]: Started scheduling
+23:40:43.278977 [info ]: Finished scheduling [  0.00s]
+23:40:43.278993 [debug]: Compilation - 1 nodes selected: {"model.olist.stg_olist__orders"}
+23:40:43.403896 [info ]: Started building task graph
+23:40:43.403958 [info ]: Finished building task graph [  0.00s]
+23:40:43.404065 [info ]: Started rendering (1 nodes)
+23:40:43.404084 [info ]: Started model dbt_subomii.stg_olist__orders
+23:40:43.404097 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:40:43.404147 [info ]: Finished loading project [  0.14s]
+23:40:43.404339 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:40:43.404481 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:43.404501 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:40:43.404528 [info ]: Started analyzing (1 nodes)
+23:40:43.404538 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:40:43.405196 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:40:43.405220 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:43.405229 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+23:40:43.408198 [info ]: Started scheduling
+23:40:43.408247 [info ]: Finished scheduling [  0.00s]
+23:40:43.409177 [info ]: Cached model count updated: 6 models (accurate)
+23:40:44.822770 [info ]: Started loading project
+23:40:44.823045 [info ]: Loading profiles.yml
+23:40:44.845073 [info ]: Cached model count updated: 6 models (estimate)
+23:40:44.845096 [info ]: Cached model count updated: 6 models (accurate)
+23:40:44.845138 [info ]: Started scheduling
+23:40:44.845237 [info ]: Finished scheduling [  0.00s]
+23:40:44.845255 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+23:40:44.971048 [info ]: Started building task graph
+23:40:44.971137 [info ]: Finished building task graph [  0.00s]
+23:40:44.971262 [info ]: Started rendering (6 nodes)
+23:40:44.971280 [info ]: Started model dbt_subomii.stg_olist__orders
+23:40:44.971293 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:40:44.971319 [info ]: Started model dbt_subomii.dim_customers
+23:40:44.971328 [debug]: Started rendering model dbt_subomii.dim_customers
+23:40:44.971337 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+23:40:44.971345 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+23:40:44.971352 [info ]: Started model dbt_subomii.fct_orders
+23:40:44.971361 [debug]: Started rendering model dbt_subomii.fct_orders
+23:40:44.971366 [info ]: Finished loading project [  0.15s]
+23:40:44.971377 [info ]: Started model dbt_subomii.stg_stripe__payments
+23:40:44.971385 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+23:40:44.971394 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+23:40:44.971404 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+23:40:44.971525 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:40:44.971599 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:44.971626 [info ]: Started analyzing (6 nodes)
+23:40:44.971638 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:40:44.972135 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+23:40:44.972157 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+23:40:44.972159 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+23:40:44.972272 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+23:40:44.972302 [debug]: Started analyzing model dbt_subomii.fct_orders
+23:40:44.972348 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:40:44.972359 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+23:40:44.972378 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+23:40:44.972387 [debug]: Started analyzing model dbt_subomii.dim_customers
+23:40:44.972409 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:40:44.972424 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:40:44.972712 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_jaffle_shop__customers (view)
+23:40:44.972738 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:40:44.972988 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+23:40:44.972994 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+23:40:44.973033 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:40:44.973052 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+23:40:44.973067 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:40:44.973076 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:40:44.973086 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+23:40:44.973268 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_jaffle_shop_orders (view)
+23:40:44.973285 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:40:44.975193 [info ]:  Succeeded [  0.00s] model dbt_subomii.stg_stripe__payments (view)
+23:40:44.975215 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:40:44.975980 [info ]:  Succeeded [  0.00s] model dbt_subomii.fct_orders (table)
+23:40:44.976006 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+23:40:44.981358 [info ]:  Succeeded [  0.01s] model dbt_subomii.dim_customers (table)
+23:40:44.981385 [debug]: Finished analyzing [  0.01s] model dbt_subomii.dim_customers [success]
+23:40:44.981395 [info ]: Finished analyzing [  0.01s] (6 nodes, 0 skipped, 0 errors)
+23:40:44.984200 [info ]: Started scheduling
+23:40:44.984250 [info ]: Finished scheduling [  0.00s]
+23:40:44.985574 [info ]: Cached model count updated: 6 models (accurate)
+23:46:08.341572 [info ]: Started loading project
+23:46:08.342334 [info ]: Loading profiles.yml
+23:46:08.365621 [info ]: Finished loading project [  0.02s]
+23:46:08.365973 [info ]: Cached model count updated: 6 models (accurate)
+23:46:09.871676 [info ]: Started loading project
+23:46:09.871972 [info ]: Loading profiles.yml
+23:46:09.893732 [info ]: Cached model count updated: 6 models (estimate)
+23:46:09.893763 [info ]: Cached model count updated: 6 models (accurate)
+23:46:09.893803 [info ]: Started scheduling
+23:46:09.893900 [info ]: Finished scheduling [  0.00s]
+23:46:09.893917 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+23:46:10.020574 [info ]: Started building task graph
+23:46:10.020702 [info ]: Finished building task graph [  0.00s]
+23:46:10.020843 [info ]: Started rendering (6 nodes)
+23:46:10.020864 [info ]: Started model dbt_subomii.stg_olist__orders
+23:46:10.020878 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:46:10.020907 [info ]: Started model dbt_subomii.dim_customers
+23:46:10.020916 [debug]: Started rendering model dbt_subomii.dim_customers
+23:46:10.020925 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+23:46:10.020934 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+23:46:10.020943 [info ]: Started model dbt_subomii.fct_orders
+23:46:10.020952 [debug]: Started rendering model dbt_subomii.fct_orders
+23:46:10.020962 [info ]: Started model dbt_subomii.stg_stripe__payments
+23:46:10.020969 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+23:46:10.020978 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+23:46:10.020966 [info ]: Finished loading project [  0.15s]
+23:46:10.020986 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+23:46:10.021232 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:46:10.021312 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:46:10.021349 [info ]: Started analyzing (6 nodes)
+23:46:10.021365 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:46:10.021418 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+23:46:10.021418 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+23:46:10.021419 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+23:46:10.021432 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+23:46:10.021435 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+23:46:10.021479 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:46:10.021505 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+23:46:10.021527 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:46:10.021540 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+23:46:10.021556 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:46:10.021568 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+23:46:10.021588 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+23:46:10.021601 [debug]: Started analyzing model dbt_subomii.dim_customers
+23:46:10.021621 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+23:46:10.021632 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:46:10.021645 [debug]: Started analyzing model dbt_subomii.fct_orders
+23:46:10.021877 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop__customers (view)
+23:46:10.021905 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:46:10.021923 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop_orders (view)
+23:46:10.021936 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:46:10.021950 [info ]:  Succeeded [-------] model dbt_subomii.stg_stripe__payments (view)
+23:46:10.021964 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:46:10.022116 [info ]:  Succeeded [-------] model dbt_subomii.fct_orders (table)
+23:46:10.022131 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+23:46:10.022217 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:46:10.022244 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:46:10.022403 [info ]:  Succeeded [-------] model dbt_subomii.dim_customers (table)
+23:46:10.022428 [debug]: Finished analyzing [  0.00s] model dbt_subomii.dim_customers [success]
+23:46:10.022440 [info ]: Finished analyzing [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:46:10.025665 [info ]: Started scheduling
+23:46:10.025720 [info ]: Finished scheduling [  0.00s]
+23:46:10.026985 [info ]: Cached model count updated: 6 models (accurate)
+23:47:43.062078 [info ]: Started loading project
+23:47:43.062360 [info ]: Loading profiles.yml
+23:47:43.084325 [info ]: Finished loading project [  0.02s]
+23:47:43.084552 [info ]: Cached model count updated: 6 models (accurate)
+23:47:44.111514 [info ]: Started loading project
+23:47:44.111839 [info ]: Loading profiles.yml
+23:47:44.131627 [info ]: Finished loading project [  0.02s]
+23:47:44.131843 [info ]: Cached model count updated: 6 models (accurate)
+23:47:45.551352 [info ]: Started loading project
+23:47:45.551640 [info ]: Loading profiles.yml
+23:47:45.572501 [info ]: Cached model count updated: 6 models (estimate)
+23:47:45.572525 [info ]: Cached model count updated: 6 models (accurate)
+23:47:45.572564 [info ]: Started scheduling
+23:47:45.572660 [info ]: Finished scheduling [  0.00s]
+23:47:45.572676 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+23:47:45.699464 [info ]: Started building task graph
+23:47:45.699559 [info ]: Finished building task graph [  0.00s]
+23:47:45.699704 [info ]: Started rendering (6 nodes)
+23:47:45.699723 [info ]: Started model dbt_subomii.stg_olist__orders
+23:47:45.699735 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:47:45.699763 [info ]: Started model dbt_subomii.dim_customers
+23:47:45.699772 [debug]: Started rendering model dbt_subomii.dim_customers
+23:47:45.699782 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+23:47:45.699789 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+23:47:45.699800 [info ]: Started model dbt_subomii.fct_orders
+23:47:45.699808 [debug]: Started rendering model dbt_subomii.fct_orders
+23:47:45.699817 [info ]: Started model dbt_subomii.stg_stripe__payments
+23:47:45.699825 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+23:47:45.699816 [info ]: Finished loading project [  0.15s]
+23:47:45.699835 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+23:47:45.699840 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+23:47:45.700306 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+23:47:45.700304 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:47:45.700307 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+23:47:45.700307 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+23:47:45.700304 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+23:47:45.700319 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+23:47:45.700388 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:47:45.700419 [info ]: Started analyzing (6 nodes)
+23:47:45.700431 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+23:47:45.700459 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+23:47:45.700471 [debug]: Started analyzing model dbt_subomii.dim_customers
+23:47:45.700496 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:47:45.700509 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+23:47:45.700535 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:47:45.700566 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+23:47:45.700594 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+23:47:45.700606 [debug]: Started analyzing model dbt_subomii.fct_orders
+23:47:45.700660 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:47:45.700672 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:47:45.700681 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:47:45.700780 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop__customers (view)
+23:47:45.700808 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:47:45.700839 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop_orders (view)
+23:47:45.700850 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:47:45.700874 [info ]:  Succeeded [-------] model dbt_subomii.stg_stripe__payments (view)
+23:47:45.700883 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:47:45.701160 [info ]:  Succeeded [-------] model dbt_subomii.fct_orders (table)
+23:47:45.701185 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+23:47:45.701323 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:47:45.701344 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:47:45.701358 [info ]:  Succeeded [-------] model dbt_subomii.dim_customers (table)
+23:47:45.701371 [debug]: Finished analyzing [  0.00s] model dbt_subomii.dim_customers [success]
+23:47:45.701378 [info ]: Finished analyzing [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:47:45.704578 [info ]: Started scheduling
+23:47:45.704631 [info ]: Finished scheduling [  0.00s]
+23:47:45.705888 [info ]: Cached model count updated: 6 models (accurate)
+23:47:57.541473 [info ]: Started loading project
+23:47:57.541784 [info ]: Loading profiles.yml
+23:47:57.565065 [info ]: Finished loading project [  0.02s]
+23:47:57.565287 [info ]: Cached model count updated: 6 models (accurate)
+23:47:59.181723 [info ]: Started loading project
+23:47:59.182006 [info ]: Loading profiles.yml
+23:47:59.198112 [info ]: Cached model count updated: 6 models (estimate)
+23:47:59.198138 [info ]: Cached model count updated: 6 models (accurate)
+23:47:59.198182 [info ]: Started scheduling
+23:47:59.198300 [info ]: Finished scheduling [  0.00s]
+23:47:59.198317 [debug]: Compilation - 6 nodes selected: {"model.olist.dim_customers", "model.olist.fct_orders", "model.olist.stg_jaffle_shop__customers", "model.olist.stg_jaffle_shop_orders", "model.olist.stg_olist__orders", "model.olist.stg_stripe__payments"}
+23:47:59.327964 [info ]: Started building task graph
+23:47:59.328060 [info ]: Finished building task graph [  0.00s]
+23:47:59.328207 [info ]: Started rendering (6 nodes)
+23:47:59.328226 [info ]: Started model dbt_subomii.stg_olist__orders
+23:47:59.328239 [debug]: Started rendering model dbt_subomii.stg_olist__orders
+23:47:59.328267 [info ]: Started model dbt_subomii.dim_customers
+23:47:59.328275 [debug]: Started rendering model dbt_subomii.dim_customers
+23:47:59.328284 [info ]: Started model dbt_subomii.stg_jaffle_shop__customers
+23:47:59.328292 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop__customers
+23:47:59.328300 [info ]: Started model dbt_subomii.fct_orders
+23:47:59.328320 [debug]: Started rendering model dbt_subomii.fct_orders
+23:47:59.328336 [info ]: Started model dbt_subomii.stg_stripe__payments
+23:47:59.328331 [info ]: Finished loading project [  0.15s]
+23:47:59.328345 [debug]: Started rendering model dbt_subomii.stg_stripe__payments
+23:47:59.328358 [info ]: Started model dbt_subomii.stg_jaffle_shop_orders
+23:47:59.328367 [debug]: Started rendering model dbt_subomii.stg_jaffle_shop_orders
+23:47:59.328599 [debug]: Compiled SQL for node model.olist.stg_olist__orders at target/.lsp/compiled/models/staging/olist/stg_olist__orders.sql
+23:47:59.328603 [debug]: Compiled SQL for node model.olist.fct_orders at target/.lsp/compiled/models/marts/finance/fct_orders.sql
+23:47:59.328677 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:47:59.328707 [info ]: Started analyzing (6 nodes)
+23:47:59.328719 [debug]: Started analyzing model dbt_subomii.stg_olist__orders
+23:47:59.328747 [debug]: Finished rendering [  0.00s] model dbt_subomii.fct_orders [success]
+23:47:59.328757 [debug]: Started analyzing model dbt_subomii.fct_orders
+23:47:59.328769 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop__customers at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop__customers.sql
+23:47:59.328769 [debug]: Compiled SQL for node model.olist.stg_jaffle_shop_orders at target/.lsp/compiled/models/staging/jaffle_shop/stg_jaffle_shop_orders.sql
+23:47:59.328777 [debug]: Compiled SQL for node model.olist.stg_stripe__payments at target/.lsp/compiled/models/staging/stripe/stg_stripe__payments.sql
+23:47:59.328783 [debug]: Compiled SQL for node model.olist.dim_customers at target/.lsp/compiled/models/marts/dim_customers.sql
+23:47:59.328825 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:47:59.328856 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop_orders
+23:47:59.328893 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:47:59.328907 [debug]: Started analyzing model dbt_subomii.stg_stripe__payments
+23:47:59.328933 [debug]: Finished rendering [  0.00s] model dbt_subomii.dim_customers [success]
+23:47:59.328947 [debug]: Started analyzing model dbt_subomii.dim_customers
+23:47:59.328973 [debug]: Finished rendering [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:47:59.328984 [info ]: Finished rendering [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:47:59.329012 [debug]: Started analyzing model dbt_subomii.stg_jaffle_shop__customers
+23:47:59.329111 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop_orders (view)
+23:47:59.329137 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop_orders [success]
+23:47:59.329166 [info ]:  Succeeded [-------] model dbt_subomii.stg_jaffle_shop__customers (view)
+23:47:59.329186 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_jaffle_shop__customers [success]
+23:47:59.329199 [info ]:  Succeeded [-------] model dbt_subomii.stg_stripe__payments (view)
+23:47:59.329205 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_stripe__payments [success]
+23:47:59.329305 [info ]:  Succeeded [-------] model dbt_subomii.fct_orders (table)
+23:47:59.329327 [debug]: Finished analyzing [  0.00s] model dbt_subomii.fct_orders [success]
+23:47:59.329463 [info ]:  Succeeded [-------] model dbt_subomii.stg_olist__orders (view)
+23:47:59.329485 [debug]: Finished analyzing [  0.00s] model dbt_subomii.stg_olist__orders [success]
+23:47:59.329852 [info ]:  Succeeded [-------] model dbt_subomii.dim_customers (table)
+23:47:59.329876 [debug]: Finished analyzing [  0.00s] model dbt_subomii.dim_customers [success]
+23:47:59.329886 [info ]: Finished analyzing [  0.00s] (6 nodes, 0 skipped, 0 errors)
+23:47:59.333205 [info ]: Started scheduling
+23:47:59.333264 [info ]: Finished scheduling [  0.00s]
+23:47:59.334587 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2026-04-29T23:49:08.277398Z | 31a415e5-79d5-4fc7-9ab0-cd353cf8473e ====================
+23:49:08.277439 [info ]: Starting dbt LSP server
+23:49:08.277454 [info ]: Connecting to LSP client on port 58961
+23:49:08.277602 [info ]: Successfully connected to LSP client
+23:49:08.277609 [info ]: Creating LSP service...
+23:49:08.332087 [info ]: Creating LSP server...
+23:49:08.332111 [info ]: Starting LSP server...
+23:49:08.531780 [info ]: Started loading project
+23:49:08.531893 [info ]: Finished loading project [  0.00s]
