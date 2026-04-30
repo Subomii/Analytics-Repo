@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_delivery_performance
+    columns:
+      - name: customer_state
+        tests:
+          - unique
+          - not_null
+      - name: total_orders
+        tests:
+          - not_null
+      - name: late_order_pct
+        tests:
+          - not_null:
+              config:
+                severity: warn
