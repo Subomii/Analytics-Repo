@@ -9,6 +9,8 @@ Olist is a Brazilian e-commerce marketplace connecting sellers to customers acro
 ## Architecture
 
 Kaggle CSVs → Snowflake (RAW_OLIST) → dbt staging → intermediate → marts
+## DAG
+![Pipeline DAG](dag.png)
 
 ## Project Structure
 
@@ -77,3 +79,6 @@ models/marts/finance — delivery performance models
 Brazilian E-Commerce Public Dataset by Olist — available on [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 99,441 orders from 2016 to 2018 across multiple marketplaces in Brazil.
+
+
+
