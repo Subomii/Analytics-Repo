@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fct_delivery_performance
+    description: "Delivery performance metrics aggregated by Brazilian state. Used to identify states with late delivery issues."
+    columns:
+      - name: customer_state
+        description: "Brazilian state abbreviation"
+        tests:
+          - unique
+          - not_null
+      - name: total_orders
+        description: "Total number of delivered orders in the state"
+        tests:
+          - not_null
+      - name: avg_actual_delivery_days
+        description: "Average number of days orders actually took to be delivered"
+      - name: avg_estimated_delivery_days
+        description: "Average number of days orders were estimated to take for delivery"
+      - name: avg_delay_days
+        description: "Average number of days orders were delayed. Negative means early delivery."
+      - name: late_orders
+        description: "Number of orders delivered after the estimated delivery date"
+      - name: on_time_orders
+        description: "Number of orders delivered on or before the estimated delivery date"
+      - name: late_order_pct
+        description: "Percentage of orders delivered late in the state"
+        tests:
+          - not_null:
+              config:
+                severity: warn
