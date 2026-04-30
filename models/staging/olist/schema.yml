@@ -1,77 +1,156 @@
 version: 2
 
+sources:
+  - name: olist
+    database: ANALYTICS
+    schema: RAW_OLIST
+    description: "Raw Brazilian e-commerce data from Olist marketplace loaded from Kaggle CSV files"
+    tables:
+      - name: orders
+        description: "Raw orders table containing all orders placed on the Olist platform"
+      - name: customers
+        description: "Raw customers table containing customer location information"
+      - name: order_items
+        description: "Raw order items table containing individual items within each order"
+      - name: payments
+        description: "Raw payments table containing payment information for each order"
+      - name: reviews
+        description: "Raw reviews table containing customer reviews for each order"
+      - name: products
+        description: "Raw products table containing product information"
+      - name: sellers
+        description: "Raw sellers table containing seller location information"
+      - name: geolocation
+        description: "Raw geolocation table containing zip code coordinates"
+      - name: product_category_name_translation
+        description: "Lookup table translating Portuguese product category names to English"
+
 models:
   - name: stg_olist__orders
+    description: "Cleaned and renamed orders from the Olist marketplace"
     columns:
       - name: order_id
+        description: "Unique identifier for each order"
         tests:
           - unique
           - not_null
       - name: customer_id
+        description: "Foreign key to the customers table"
         tests:
           - not_null
       - name: order_status
+        description: "Current status of the order"
         tests:
           - not_null
           - accepted_values:
               arguments:
                 values: ['delivered', 'shipped', 'canceled', 'unavailable', 
                          'invoiced', 'processing', 'created', 'approved']
+      - name: ordered_at
+        description: "Timestamp when the order was placed"
+      - name: approved_at
+        description: "Timestamp when the order was approved"
+      - name: delivered_to_carrier_at
+        description: "Timestamp when the order was handed to the carrier"
+      - name: delivered_to_customer_at
+        description: "Timestamp when the order was delivered to the customer"
+      - name: estimated_delivery_at
+        description: "Estimated delivery date provided at time of purchase"
 
   - name: stg_olist__customers
+    description: "Cleaned and renamed customers from the Olist marketplace"
     columns:
       - name: customer_id
+        description: "Unique identifier for each customer order — one customer can have multiple IDs"
         tests:
           - unique
           - not_null
       - name: customer_unique_id
+        description: "Unique identifier for each individual customer across all orders"
         tests:
           - not_null
+      - name: customer_city
+        description: "City where the customer is located"
+      - name: customer_state
+        description: "Brazilian state where the customer is located"
 
   - name: stg_olist__order_items
+    description: "Cleaned and renamed order items from the Olist marketplace"
     columns:
       - name: order_id
+        description: "Foreign key to the orders table"
         tests:
           - not_null
       - name: product_id
+        description: "Foreign key to the products table"
         tests:
           - not_null
       - name: seller_id
+        description: "Foreign key to the sellers table"
         tests:
           - not_null
+      - name: price
+        description: "Price of the item in Brazilian Reais"
+      - name: freight_value
+        description: "Freight cost for the item in Brazilian Reais"
 
   - name: stg_olist__payments
+    description: "Cleaned and renamed payments from the Olist marketplace"
     columns:
       - name: order_id
+        description: "Foreign key to the orders table"
         tests:
           - not_null
+      - name: payment_sequential
+        description: "Sequence number for payments on the same order"
+      - name: payment_type
+        description: "Method of payment used"
+      - name: payment_installments
+        description: "Number of installments chosen by the customer"
       - name: payment_value
+        description: "Value of the payment installment in Brazilian Reais"
         tests:
           - not_null
 
   - name: stg_olist__sellers
+    description: "Cleaned and renamed sellers from the Olist marketplace"
     columns:
       - name: seller_id
+        description: "Unique identifier for each seller"
         tests:
           - unique
           - not_null
+      - name: seller_city
+        description: "City where the seller is located"
+      - name: seller_state
+        description: "Brazilian state where the seller is located"
 
   - name: stg_olist__products
+    description: "Cleaned and renamed products from the Olist marketplace"
     columns:
       - name: product_id
+        description: "Unique identifier for each product"
         tests:
           - unique
           - not_null
+      - name: product_category_name
+        description: "Product category name in Portuguese"
+      - name: product_weight_g
+        description: "Product weight in grams"
 
   - name: stg_olist__reviews
+    description: "Cleaned and renamed customer reviews from the Olist marketplace"
     columns:
       - name: review_id
+        description: "Unique identifier for each review"
         tests:
           - not_null
       - name: order_id
+        description: "Foreign key to the orders table"
         tests:
           - not_null
       - name: review_score
+        description: "Customer review score from 1 to 5"
         tests:
           - not_null
           - accepted_values:
