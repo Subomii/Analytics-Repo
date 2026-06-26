@@ -82,7 +82,3 @@ Brazilian E-Commerce Public Dataset by Olist — available on [Kaggle](https://w
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 580c518a8fa3165c247417bd95281f8ddd11935b
